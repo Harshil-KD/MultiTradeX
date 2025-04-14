@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uploadProductScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingTop="8dp"
+        android:paddingHorizontal="8dp">
+
+        <EditText
+            android:id="@+id/productNameEditText"
+            android:hint="Product Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/productDescriptionEditText"
+            android:hint="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <EditText
+            android:id="@+id/productCategoryEditText"
+            android:hint="Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+
+        <EditText
+            android:id="@+id/productStockEditText"
+            android:hint="Stock"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/productRetailPriceEditText"
+            android:hint="Retail Price"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="HardcodedText" />
+
+        <!-- 🆕 Wholesale Price Fields -->
+        <EditText
+            android:id="@+id/price1to5EditText"
+            android:hint="Wholesale Price (1-5 qty)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/price6to10EditText"
+            android:hint="Wholesale Price (6-10 qty)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/price11plusEditText"
+            android:hint="Wholesale Price (11+ qty)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/availableForSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:paddingVertical="8dp"
+            android:entries="@array/available_for_options" />
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:text="Upload Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="320dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/submitProductButton"
+            android:text="Publish Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="320dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/uploadProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

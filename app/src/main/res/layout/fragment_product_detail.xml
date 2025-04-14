@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ========== Shared Content (Visible in Both Views) ========== -->
+
+        <!-- Image Carousel -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/imageCarouselViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Optional Page Indicator -->
+        <LinearLayout
+            android:id="@+id/indicatorLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Basic Product Info -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/availableForTextView"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sellerBusinessNameTextView"
+            android:text="Sold by: [Business Name]"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/stockTextView"
+            android:text="In Stock: 0"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:textColor="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ========== Seller View Only Section ========== -->
+        <LinearLayout
+            android:id="@+id/staticPriceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/staticRetailPriceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retail Price: $0.00"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/staticWholesalePriceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wholesale:\n 1-5: $0.00\n 6-10: $0.00\n 11+: $0.00"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- ========== Buyer View Only Section ========== -->
+        <LinearLayout
+            android:id="@+id/quantitySection"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Quantity:"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <NumberPicker
+                android:id="@+id/quantityPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:text="Price: $0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addToCart"
+            android:text="Add To Cart"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/reviewButton"
+            android:text="Leave a Review"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
+            tools:ignore="HardcodedText" />
+
+        <!-- ========== Seller Only Buttons ========== -->
+        <Button
+            android:id="@+id/editProductButton"
+            android:text="Edit Product"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/deleteProductButton"
+            android:text="Delete Product"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>

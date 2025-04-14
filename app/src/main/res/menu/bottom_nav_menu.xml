@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_browse"
+        android:icon="@drawable/ic_search"
+        android:title="Browse"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_my_products"
+        android:icon="@drawable/ic_list"
+        android:title="My Products"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile"
+        tools:ignore="HardcodedText" />
+</menu>

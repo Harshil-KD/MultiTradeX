@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Order Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderSummaryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Shipping Details -->
+    <TextView
+        android:id="@+id/shippingDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipping:"
+        android:padding="8dp"
+        android:textStyle="bold" />
+
+    <!-- Payment Method -->
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Method:"
+        android:padding="8dp" />
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/orderTotalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:padding="8dp" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirmOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm and Pay"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white" />
+</LinearLayout>

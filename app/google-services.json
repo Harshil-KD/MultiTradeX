@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558141525293",
+    "project_id": "multitradex-69d6a",
+    "storage_bucket": "multitradex-69d6a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558141525293:android:ad2aac10c0d13c267e57a4",
+        "android_client_info": {
+          "package_name": "com.example.multitradex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOqVLYNqkEYNdppqKx8vFSZ4KkylxkXz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Outer Circle Background -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M24,2A22,22 0,1 1 2,24A22,22 0,0 1 24,2Z" />
+
+    <!-- Crossed X (Trade) -->
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="2"
+        android:pathData="M16,16 L32,32"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="2"
+        android:pathData="M16,32 L32,16"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Arrows (Exchange) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M10,24 L18,24 L17,23 L19,24 L17,25 L18,24 Z" />
+
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M38,24 L30,24 L31,23 L29,24 L31,25 L30,24 Z" />
+
+</vector>

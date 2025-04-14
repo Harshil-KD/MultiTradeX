@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ✅ Base theme with no ActionBar -->
+    <style name="Base.Theme.MultiTradeX" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Add any base theme-level attributes here -->
+    </style>
+
+    <!-- ✅ App theme that inherits from base -->
+    <style name="Theme.MultiTradeX" parent="Base.Theme.MultiTradeX">
+        <item name="cardViewStyle">@style/CustomCardView</item>
+    </style>
+
+</resources>
